@@ -1,0 +1,26 @@
+{
+  "criteria": {
+    "event": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:apple"
+          ],
+          "components": {
+            "custom_model_data":12700012
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "event"
+    ]
+  ],
+  "rewards": {
+		"function": "tcc:recall_potion_use_event"
+	},
+  "sends_telemetry_event": false
+}

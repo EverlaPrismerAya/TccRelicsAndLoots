@@ -1,0 +1,50 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:diamond"
+    },
+    "X": {
+      "item": "minecraft:apple"
+    }
+  },
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:apple",
+    "components": {
+      "rarity":"rare",
+      "custom_model_data":12700009,
+      "item_name": "钻石苹果",
+      "food":{
+        "eat_seconds":3.2,
+        "saturation":9.6,
+        "effects":[
+          {
+            "effect":{
+              "duration":1200,
+              "amplifier":0,
+              "show_icon":true,
+              "id":"minecraft:haste"
+            }
+          },
+          {
+            "effect":{
+              "duration":1200,
+              "amplifier":1,
+              "show_icon":true,
+              "id":"minecraft:speed"
+            }
+          }
+        ],
+        "nutrition":4,
+        "can_always_eat":true
+      }
+    }
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 5.0,
+                "min": 0.0
+              },
+              "function": "minecraft:set_count"
+            },
+            {
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 2.0,
+                "min": 0.0
+              },
+              "enchantment": "minecraft:looting",
+              "function": "minecraft:enchanted_count_increase"
+            },
+            {
+              "conditions": [],
+              "function": "minecraft:set_components",
+              "components": {
+                "rarity":"common",
+                "custom_model_data":30600011,
+                "item_name": "疯弹",
+                "food":{
+                  "saturation":1.4,
+                  "effects":[
+                    {
+                      "effect":{
+                        "duration":1200,
+                        "amplifier":0,
+                        "show_icon":true,
+                        "id":"minecraft:wind_charged"
+                      }
+                    }
+                  ],
+                  "nutrition":1,
+                  "can_always_eat":true
+                }
+              }
+            }
+          ],
+          "name": "minecraft:apple",
+          "weight":10
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 2.0,
+                "min": 0.0
+              },
+              "function": "minecraft:set_count"
+            },
+            {
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 1.0,
+                "min": 0.0
+              },
+              "enchantment": "minecraft:looting",
+              "function": "minecraft:enchanted_count_increase"
+            }
+          ],
+          "name": "minecraft:breeze_rod",
+          "weight":40
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "minecraft:entities/breeze"
+}

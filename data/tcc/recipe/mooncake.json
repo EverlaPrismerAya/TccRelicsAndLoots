@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:end_stone"
+    },
+    "S": {
+      "item": "minecraft:sugar"
+    },
+    "W": {
+      "item": "minecraft:wheat"
+    }
+  },
+  "pattern": [
+    "#S",
+    "WW"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:apple",
+    "components": {
+      "rarity":"uncommon",
+      "custom_model_data":40900003,
+      "item_name": "月饼",
+      "food":{
+        "eat_seconds":4.4,
+        "saturation":3.6,
+        "nutrition":4,
+        "can_always_eat":true
+      }
+    }
+  }
+}

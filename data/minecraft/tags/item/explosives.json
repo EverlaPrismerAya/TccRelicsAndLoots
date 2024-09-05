@@ -1,0 +1,14 @@
+{
+    "values": [
+      "minecraft:tnt",
+      "minecraft:tnt_minecart",
+      "minecraft:creeper_spawn_egg",
+      "minecraft:wither_spawn_egg",
+      "minecraft:ender_dragon_spawn_egg",
+      "minecraft:ghast_spawn_egg",
+      "minecraft:end_crystal",
+      "minecraft:respawn_anchor",
+      "#minecraft:soul_fire_base_blocks",
+      "minecraft:wither_skeleton_skull"
+    ]
+  }

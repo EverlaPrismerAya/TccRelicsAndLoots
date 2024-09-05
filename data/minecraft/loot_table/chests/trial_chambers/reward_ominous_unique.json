@@ -1,0 +1,116 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:enchanted_golden_apple",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:flow_armor_trim_smithing_template",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:flow_banner_pattern",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:heavy_core"
+        },
+        {
+          "conditions": [],
+          "functions": [
+            {
+              "conditions": [],
+              "function": "minecraft:set_components",
+              "components": {
+                "rarity":"epic",
+                "max_damage":1,
+                "repair_cost":114514,
+                "lore":["{\"text\":\"KL_qiqi_用了都说好\",\"color\":\"aqua\",\"italic\":false}"],
+                "enchantments": {
+                  "levels": {
+                    "tcc:instakill_axe": 1
+                  },
+                  "show_in_tooltip": true
+                },
+                "item_name": "秒人斧"
+              }
+            }
+          ],
+          "type": "item",
+          "name": "minecraft:golden_axe"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:enchant_randomly",
+              "options": [
+                "tcc:yamato_judgement_cut",
+                "tcc:pvp_master",
+                "tcc:blade_of_blacksmith"
+              ]
+            }
+          ],
+          "name": "minecraft:book",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_chestplate",
+          "functions": [
+            {
+              "conditions": [],
+              "function": "minecraft:set_components",
+              "components": {
+                "rarity":"epic",
+                "max_damage":660,
+                "custom_model_data":30800001,
+                "item_name": "§6真·幻灵甲§r",
+                "lore":[
+                  "{\"text\":\"真正的抛瓦\",\"color\":\"red\",\"italic\":false}",
+                  "{\"text\":\"你从它上面听到了若有若无的低语...\",\"color\":\"dark_purple\",\"italic\":true}",
+                  "{\"text\":\"你说得对，但这就是RTX3080。装上后获得额外帧率，\",\"color\":\"dark_gray\",\"italic\":true}",
+                  "{\"text\":\"但是，RTX3080是：\",\"color\":\"dark_gray\",\"italic\":true}",
+                  "{\"text\":\"功耗高的发热高的容易红温的可能是矿的；\",\"color\":\"dark_gray\",\"italic\":true}",
+                  "{\"text\":\"打不过4070s的不开oc分跑不全的噪音大的怕电源不稳的；\",\"color\":\"dark_gray\",\"italic\":true}",
+                  "{\"text\":\"来个40系中高端就能吊打的没有保修的会把上面的手办烫坏的。\",\"color\":\"dark_gray\",\"italic\":true}",
+                  "{\"text\":\"总之不许诋毁我们RTX3080。\",\"color\":\"dark_gray\",\"italic\":true}",
+                  "{\"text\":\"你就看这波，为什么一个像素游戏它跑不到400帧啊？\",\"color\":\"dark_gray\",\"italic\":true}",
+                  "{\"text\":\"英伟达什么时候加强一下RTX3080啊？\",\"color\":\"dark_gray\",\"italic\":true}"
+                ],
+                "attribute_modifiers":{
+                  "modifiers":[
+                    {
+                      "id":"armor",
+                      "amount":10,
+                      "slot":"chest",
+                      "type":"minecraft:generic.armor",
+                      "operation":"add_value"
+                    },
+                    {
+                      "id":"armor_toughness",
+                      "amount":4,
+                      "slot":"chest",
+                      "type":"minecraft:generic.armor_toughness",
+                      "operation":"add_value"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "minecraft:chests/trial_chambers/reward_ominous_unique"
+}

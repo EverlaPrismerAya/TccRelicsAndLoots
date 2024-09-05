@@ -1,0 +1,58 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "D": {
+      "item": "minecraft:diamond_chestplate"
+    },
+    "P": {
+      "item": "minecraft:phantom_membrane"
+    },
+    "S": {
+      "item": "minecraft:slime_ball"
+    },
+    "N": {
+      "item": "minecraft:netherite_ingot"
+    }
+  },
+  "pattern": [
+    "ADA",
+    "PSP",
+    "PNP"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:elytra",
+    "components": {
+      "fire_resistant":{},
+      "rarity":"rare",
+      "custom_model_data":12900002,
+      "item_name": "融钻合金鞘翅",
+      "max_damage":620,
+      "lore":[
+        "{\"text\":\"使用下界合金和钻石进行强化的鞘翅\",\"color\":\"red\",\"italic\":false}"
+      ],
+      "attribute_modifiers":{
+        "modifiers":[
+          {
+            "id":"elytra_armor",
+            "amount":4,
+            "slot":"chest",
+            "type":"minecraft:generic.armor",
+            "operation":"add_value"
+          },
+          {
+            "id":"elytra_armor_toughness",
+            "amount":1,
+            "slot":"chest",
+            "type":"minecraft:generic.armor_toughness",
+            "operation":"add_value"
+          }
+        ]
+      }
+    }
+  }
+}

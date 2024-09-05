@@ -1,0 +1,26 @@
+{
+  "criteria": {
+    "event": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:command_block"
+          ],
+          "components": {
+            "custom_model_data":40900004
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "event"
+    ]
+  ],
+  "rewards": {
+		"function": "tcc:tcc_server_use_event"
+	},
+  "sends_telemetry_event": false
+}

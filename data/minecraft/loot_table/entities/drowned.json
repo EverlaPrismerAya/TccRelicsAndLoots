@@ -1,0 +1,131 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 2.0,
+                "min": 0.0
+              },
+              "function": "minecraft:set_count"
+            },
+            {
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 1.0,
+                "min": 0.0
+              },
+              "enchantment": "minecraft:looting",
+              "function": "minecraft:enchanted_count_increase"
+            }
+          ],
+          "name": "minecraft:rotten_flesh"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:killed_by_player"
+        },
+        {
+          "condition": "minecraft:random_chance_with_enchanted_bonus",
+          "enchanted_chance": {
+            "type": "minecraft:linear",
+            "base": 0.02,
+            "per_level_above_first": 0.02
+          },
+          "enchantment": "minecraft:looting",
+          "unenchanted_chance": 0.11
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:copper_ingot"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:killed_by_player"
+        },
+        {
+          "condition": "minecraft:random_chance_with_enchanted_bonus",
+          "enchanted_chance": {
+            "type": "minecraft:linear",
+            "base": 0.0015,
+            "per_level_above_first": 0.0015
+          },
+          "enchantment": "minecraft:looting",
+          "unenchanted_chance": 0.008
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_sword",
+          "functions": [
+            {
+              "conditions": [],
+              "function": "minecraft:set_components",
+              "components": {
+                "rarity":"rare",
+                "max_damage":1281,
+                "custom_model_data":30600005,
+                "item_name": "海爵剑",
+                "lore":["{\"text\":\"现在它不再是小丑了！\",\"color\":\"dark_aqua\",\"italic\":false}"],
+                "attribute_modifiers":{
+                  "modifiers":[
+                    {
+                      "id":"attack_damage",
+                      "amount":7.5,
+                      "slot":"mainhand",
+                      "type":"minecraft:generic.attack_damage",
+                      "operation":"add_value"
+                    },
+                    {
+                      "id":"attack_speed",
+                      "amount":-2.4,
+                      "slot":"mainhand",
+                      "type":"minecraft:generic.attack_speed",
+                      "operation":"add_value"
+                    },
+                    {
+                      "id":"scale",
+                      "amount":0.3,
+                      "slot":"mainhand",
+                      "type":"minecraft:generic.scale",
+                      "operation":"add_value"
+                    },
+                    {
+                      "id":"swim_speed",
+                      "amount":0.12,
+                      "slot":"mainhand",
+                      "type":"minecraft:generic.water_movement_efficiency",
+                      "operation":"add_multiplied_base"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "random_sequence": "minecraft:entities/drowned"
+}

@@ -1,0 +1,99 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:killed_by_player"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 1.0,
+                "min": 0.0
+              },
+              "function": "minecraft:set_count"
+            },
+            {
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 1.0,
+                "min": 0.0
+              },
+              "enchantment": "minecraft:looting",
+              "function": "minecraft:enchanted_count_increase"
+            }
+          ],
+          "name": "minecraft:blaze_rod"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:killed_by_player"
+        },
+        {
+          "condition": "minecraft:random_chance_with_enchanted_bonus",
+          "enchanted_chance": {
+            "type": "minecraft:linear",
+            "base": 0.0003,
+            "per_level_above_first": 0.0003
+          },
+          "enchantment": "minecraft:looting",
+          "unenchanted_chance": 0.0016
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_sword",
+          "weight": 1,
+          "functions": [
+            {
+              "conditions": [],
+              "function": "minecraft:set_components",
+              "components": {
+                "rarity":"epic",
+                "max_damage":1260,
+                "custom_model_data":30600007,
+                "item_name": "§c盖尔大剑",
+                "fire_resistant":{},
+                "lore":["{\"text\":\"它看起来残破不堪\",\"color\":\"dark_purple\"}","{\"text\":\"将它与下界合金模板和下界合金锭敲在一起可以将其修复\",\"color\":\"dark_gray\"}"],
+                "attribute_modifiers":{
+                  "modifiers":[
+                    {
+                      "id":"attack_damage",
+                      "amount":6.5,
+                      "slot":"mainhand",
+                      "type":"minecraft:generic.attack_damage",
+                      "operation":"add_value"
+                    },
+                    {
+                      "id":"attack_speed",
+                      "amount":-2.4,
+                      "slot":"mainhand",
+                      "type":"minecraft:generic.attack_speed",
+                      "operation":"add_value"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "random_sequence": "minecraft:entities/blaze"
+}

@@ -1,0 +1,149 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 1.0,
+                "min": -1.0
+              },
+              "function": "minecraft:set_count"
+            },
+            {
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 1.0,
+                "min": 0.0
+              },
+              "enchantment": "minecraft:looting",
+              "function": "minecraft:enchanted_count_increase"
+            }
+          ],
+          "name": "minecraft:coal"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 2.0,
+                "min": 0.0
+              },
+              "function": "minecraft:set_count"
+            },
+            {
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 1.0,
+                "min": 0.0
+              },
+              "enchantment": "minecraft:looting",
+              "function": "minecraft:enchanted_count_increase"
+            }
+          ],
+          "name": "minecraft:bone"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:killed_by_player"
+        },
+        {
+          "condition": "minecraft:random_chance_with_enchanted_bonus",
+          "enchanted_chance": {
+            "type": "minecraft:linear",
+            "base": 0.01,
+            "per_level_above_first": 0.01
+          },
+          "enchantment": "minecraft:looting",
+          "unenchanted_chance": 0.025
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:wither_skeleton_skull"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:killed_by_player"
+        },
+        {
+          "condition": "minecraft:random_chance_with_enchanted_bonus",
+          "enchanted_chance": {
+            "type": "minecraft:linear",
+            "base": 0.001,
+            "per_level_above_first": 0.001
+          },
+          "enchantment": "minecraft:looting",
+          "unenchanted_chance": 0.0025
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_sword",
+          "weight": 1,
+          "functions": [
+            {
+              "conditions": [],
+              "function": "minecraft:set_components",
+              "components": {
+                "rarity":"epic",
+                "max_damage":1871,
+                "custom_model_data":30600008,
+                "item_name": "§c惊惧魂刃",
+                "enchantment_glint_override":true,
+                "lore":["{\"text\":\"上面的灵魂正发出诡异的尖叫...\",\"color\":\"light_purple\"}"],
+                "attribute_modifiers":{
+                  "modifiers":[
+                    {
+                      "id":"attack_damage",
+                      "amount":5,
+                      "slot":"mainhand",
+                      "type":"minecraft:generic.attack_damage",
+                      "operation":"add_value"
+                    },
+                    {
+                      "id":"attack_speed",
+                      "amount":-1.6,
+                      "slot":"mainhand",
+                      "type":"minecraft:generic.attack_speed",
+                      "operation":"add_value"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "minecraft:entities/wither_skeleton"
+}
