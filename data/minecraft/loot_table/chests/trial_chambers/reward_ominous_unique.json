@@ -31,7 +31,7 @@
               "function": "minecraft:set_components",
               "components": {
                 "rarity":"epic",
-                "max_damage":1,
+                "max_damage":2031,
                 "repair_cost":114514,
                 "lore":["{\"text\":\"KL_qiqi_用了都说好\",\"color\":\"aqua\",\"italic\":false}"],
                 "enchantments": {
