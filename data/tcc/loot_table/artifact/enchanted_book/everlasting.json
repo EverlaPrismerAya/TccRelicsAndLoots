@@ -1,0 +1,20 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "function": "minecraft:enchant_randomly",
+                "options": ["tcc:everlasting"]
+              }
+            ],
+            "name": "minecraft:book"
+          }
+        ]
+      }
+    ]
+  }
+  

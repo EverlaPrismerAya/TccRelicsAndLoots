@@ -1,0 +1,27 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:netherite_upgrade_smithing_template",
+            "functions": [
+              {
+                "conditions": [],
+                "function": "minecraft:set_components",
+                "components": {
+                  "rarity":"epic",
+                  "custom_model_data":12700013,
+                  "item_name": "龙之锻造模板",
+                  "lore":["{\"text\":\"用于将融钻合金鞘翅升级为龙之鞘翅\",\"color\":\"blue\",\"italic\":false}"],
+                  "fire_resistant":{}
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

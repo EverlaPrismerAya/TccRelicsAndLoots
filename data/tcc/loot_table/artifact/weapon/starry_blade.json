@@ -1,0 +1,46 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:golden_sword",
+            "functions": [
+              {
+                "conditions": [],
+                "function": "minecraft:set_components",
+                "components": {
+                  "rarity":"epic",
+                  "max_damage":16,
+                  "custom_model_data":30600001,
+                  "enchantment_glint_override":true,
+                  "item_name": "千星之握",
+                  "lore":["{\"text\":\"『群星辉耀，莫不能及』\",\"color\":\"gold\",\"italic\":false}"],
+                  "attribute_modifiers":{
+                    "modifiers":[
+                      {
+                        "id":"attack_damage",
+                        "amount":11,
+                        "slot":"mainhand",
+                        "type":"minecraft:generic.attack_damage",
+                        "operation":"add_value"
+                      },
+                      {
+                        "id":"attack_speed",
+                        "amount":-2.4,
+                        "slot":"mainhand",
+                        "type":"minecraft:generic.attack_speed",
+                        "operation":"add_value"
+                      }
+                    ]
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  
