@@ -45,7 +45,8 @@
             }
           ],
           "type": "item",
-          "name": "minecraft:golden_axe"
+          "name": "minecraft:golden_axe",
+          "weight": 2
         },
         {
           "type": "minecraft:item",
@@ -55,14 +56,16 @@
               "options": [
                 "tcc:yamato_judgement_cut",
                 "tcc:pvp_master",
-                "tcc:blade_of_blacksmith"
+                "tcc:blade_of_blacksmith",
+                "tcc:wind_breath"
               ]
             }
           ],
           "name": "minecraft:book",
-          "weight": 2
+          "weight": 3
         },
         {
+          "weight": 1,
           "type": "minecraft:item",
           "name": "minecraft:netherite_chestplate",
           "functions": [
