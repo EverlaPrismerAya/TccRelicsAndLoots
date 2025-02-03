@@ -57,7 +57,8 @@
                 "tcc:yamato_judgement_cut",
                 "tcc:pvp_master",
                 "tcc:blade_of_blacksmith",
-                "tcc:wind_breath"
+                "tcc:wind_breath",
+                "tcc:overheal"
               ]
             }
           ],
