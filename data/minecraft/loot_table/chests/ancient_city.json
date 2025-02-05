@@ -154,11 +154,11 @@
           "functions": [
             {
               "function": "minecraft:enchant_randomly",
-              "options": ["minecraft:swift_sneak","tcc:tough_as_nail"]
+              "options": ["minecraft:swift_sneak","tcc:tough_as_nail","tcc:sonic_blast"]
             }
           ],
           "name": "minecraft:book",
-          "weight": 6
+          "weight": 9
         },
         {
           "type": "minecraft:item",
