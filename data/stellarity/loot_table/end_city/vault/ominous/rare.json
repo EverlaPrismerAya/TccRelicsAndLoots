@@ -1,4 +1,5 @@
 {
+	"replace":true,
 	"pools": [
 		{
 			"rolls": 1,
