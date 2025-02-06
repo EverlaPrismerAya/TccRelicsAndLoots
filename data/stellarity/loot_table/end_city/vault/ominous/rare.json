@@ -4,6 +4,16 @@
 			"rolls": 1,
 			"entries": [
 				{
+					"weight": 2,
+					"type": "minecraft:item",
+					"name": "minecraft:spire_armor_trim_smithing_template"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"weight": 1,
+					"value": "tcc:artifact/template/dragon"
+				},
+				{
 					"type": "minecraft:item",
 					"name": "minecraft:book",
 					"weight": 3,
