@@ -1,0 +1,1 @@
+Please Delete Stellarity's \data\stellarity\loot_table\end_city to make sure TccRelicAndLoot can take over it
