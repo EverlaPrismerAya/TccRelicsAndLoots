@@ -1,7 +1,6 @@
 {
   "replace": true,
   "values": [
-    "minecraft:cactus",
     "minecraft:pumpkin",
     "minecraft:carved_pumpkin",
     "minecraft:melon"
