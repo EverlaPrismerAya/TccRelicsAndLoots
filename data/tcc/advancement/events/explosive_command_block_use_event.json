@@ -1,0 +1,26 @@
+{
+  "criteria": {
+    "event": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:command_block"
+          ],
+          "predicates": {
+						"minecraft:custom_data": "{tcc.special_item:\"explosive_command_block\"}"
+					}
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "event"
+    ]
+  ],
+  "rewards": {
+		"function": "tcc:explosive_command_block_use_event"
+	},
+  "sends_telemetry_event": false
+}
